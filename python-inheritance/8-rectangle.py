@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-'''creates a subclass Rectangle of parent class BaseGeometry'''
+""" Class that defines a rectangle from BaseGeometry Class """
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    '''class that defines a rectangle from BaseGeometry class'''
+    """ Class that defines a rectangle from BaseGeometry Class """
 
     def __init__(self, width, height):
-        '''initialies variables'''
-        self.integer_validator('width', width)
+        """ Initializes instance """
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
         self.__width = width
-        self.integer_validator('height', height)
         self.__height = height
