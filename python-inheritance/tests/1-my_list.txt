@@ -1,0 +1,11 @@
+Test 1: Print original list
+Input: [3, 1, 4, 2, 5]
+Expected Output: [3, 1, 4, 2, 5]
+
+Test 2: Print sorted list
+Input: my_list.print_sorted()
+Expected Output: [1, 2, 3, 4, 5]
+
+Test 3: Check original list remains unchanged
+Input: print(my_list)
+Expected Output: [3, 1, 4, 2, 5]
