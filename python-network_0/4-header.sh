@@ -1,3 +1,11 @@
-#!/bin/bash
-# Send a GET request to a given URL with a header variable.
-curl -s -H "X-School-User-Id: 98" "$1"
+#!/usr/bin/python3
+"""
+Python script that fetches an URL with requests package
+"""
+import requests
+
+
+if __name__ == "__main__":
+    r = requests.get('https://intranet.hbtn.io/status')
+    t = r.text
+    print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(t), t))"
