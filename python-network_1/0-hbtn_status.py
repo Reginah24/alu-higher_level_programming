@@ -1,8 +1,9 @@
-import urllib.request
+#!/usr/bin/python3
+
 import ur11ib
 
 def main():
-    """ Fetch and display status """
+    """Fetch and display status"""
     with ur11ib.request.urlopen('http://0.0.0.0:5050/status') as response:
         html = response.read()
         print('Body response:')
