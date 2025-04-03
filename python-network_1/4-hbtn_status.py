@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
-Module 4-hbtn_status.py
+Script that fetches https://alu-intranet.hbtn.io/status
+using the requests package
 """
-
 import requests
 
 
 if __name__ == "__main__":
-    r = requests.get("https://intranet.hbtn.io/status")
+    url = "https://alu-intranet.hbtn.io/status"
+    r = requests.get(url)
+    
     print("Body response:")
     print("\t- type: {}".format(type(r.text)))
     print("\t- content: {}".format(r.text))
