@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""deletes data from database"""
+"""script that deletes all State objects with a
+name containing the letter a from the database
+hbtn_0e_6_usa
+"""
+
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
@@ -14,10 +18,10 @@ if __name__ == "__main__":
     session = Session()
     Base.metadata.create_all(engine)
 
-    result = session.query(State).filter(State.name.like('%a%'))
+    states = session.query(State).filter(State.name.contains('a')).all()
 
-    for row in result:
-        session.delete(row)
+    for state in states:
+        session.delete(state)
 
     session.commit()
 
