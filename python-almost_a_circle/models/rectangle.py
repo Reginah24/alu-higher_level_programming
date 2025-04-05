@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# rectangle.py
+# loading rectangle
 """Defines a rectangle class."""
 from models.base import Base
 
@@ -97,6 +99,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Update the Rectangle.
+
         Args:
             *args (ints): New attribute values.
                 - 1st argument represents id attribute
@@ -154,4 +157,4 @@ class Rectangle(Base):
         """Return the print() and str() representation of the Rectangle."""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                        self.x, self.y,
-                                                       self.width, self.height)`
+                                                       self.width, self.height)
