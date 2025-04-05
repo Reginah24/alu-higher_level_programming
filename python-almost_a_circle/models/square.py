@@ -1,4 +1,5 @@
-quare.py
+#!/usr/bin/python3
+#square.py
 # loading square
 """Defines a square class."""
 from models.rectangle import Rectangle
